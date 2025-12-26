@@ -5,11 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const questionTitle = document.querySelector("#question");
   const formAnswers = document.querySelector("#formAnswers");
 
-  // 3. Дві змінні-рядки: назва бургера та шлях до картинки
+
   const burgerName = "Стандарт";
   const burgerImgSrc = "./image/burger.png";
 
-  // 4. Вивести дані у шаблоні HTML через інтерполяцію
   const renderBurgerOption = () => {
     questionTitle.textContent = "Якого кольору бургер бажаєте?";
     formAnswers.innerHTML = `
@@ -40,3 +39,4 @@ document.addEventListener("DOMContentLoaded", () => {
     modalBlock.classList.remove("d-block");
   });
 });
+
